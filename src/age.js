@@ -11,7 +11,6 @@ export class Age {
   this.venusAge = venusAge;
   this.marsAge = marsAge;
   this.jupiterAge = jupiterAge;
-  
   }
 
   mercuryCalc(age) {

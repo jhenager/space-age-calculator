@@ -1,12 +1,12 @@
 # _Space Age Calculator_
 
-#### _SHORT DESCR_
+#### _Application to tell the user their age on other planets_
 
 #### By _**James Henager**_
 
 ## Description
 
-_Long description._
+_This calculator will determine the age of users if they were on other planets. The calculator accounts for Earth, Mercury, Venus, Mars and Jupiter. It will also tell the user how many years they should have left on each planet based on your self-determined life expectancy. If the user is older than the life expectancy it will tell them how many years older they are!_
 
 ### Specs
 
@@ -58,30 +58,25 @@ _Long description._
   - Input: 85
   - Output: You have lived 5 years past the life expectancy for Earth.
   
-
-
-
 ## Setup/Installation Requirements
 
-* _Visit the following link: _
+* _Visit the following link: https://github.com/jhenager/space-age-calculator.git_
 * _Clone the repository to your desired directory._
-* _OR_
-* _Visit here: _
-
 
 ## Known Bugs
 
-_ _
+_Currently there is no user interface_
+
 ## Support and contact details
 
-_Contact me at...._
+_Contact me at jameschenager@gmail.com_
 
 ## Technologies Used
 
-_Technology!_
+_Javascript, Jest, Babel_
 
 ### License
 
 *GPL license distribution*
 
-Copyright (c) 2020 **_Your name(s)_**
+Copyright (c) 2020 **_James Henager_**

@@ -6,7 +6,6 @@ describe('Age', () => {
   let james;
   let nana;
 
-
   beforeEach(() => {
     james = new Age(28, 80);
     nana = new Age (100, 80)
@@ -98,4 +97,3 @@ describe('Age', () => {
     expect(nana.yearsLeftJupiter).toBe("You are 1 years older than the life expectancy!");
   })
 });
-
