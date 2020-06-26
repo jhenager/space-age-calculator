@@ -40,14 +40,18 @@ export class Age {
 
   yearsLeftMercuryCalc (lifeExpectancy) {
     if (this.mercuryAge>lifeExpectancy/.24) {
-      this.yearsLeftMercury = parseInt(this.mercuryAge-lifeExpectancy/.24)
+      this.yearsLeftMercury = "You are " + parseInt(this.mercuryAge-lifeExpectancy/.24) + " years older than the life expectancy!"
     } else {
       this.yearsLeftMercury = parseInt((lifeExpectancy/.24)-this.mercuryAge);
     }
   }
-  
+
   yearsLeftVenusCalc (lifeExpectancy) {
-    this.yearsLeftVenus = parseInt((lifeExpectancy/.62)-this.venusAge)
+    if (this.venusAge>lifeExpectancy/.62) {
+      this.yearsLeftVenus = "You are " + parseInt(this.venusAge-lifeExpectancy/.62) + " years older than the life expectancy!"
+    } else {
+      this.yearsLeftVenus = parseInt((lifeExpectancy/.62)-this.venusAge)
+    }
   }
 
   yearsLeftMarsCalc (lifeExpectancy) {
