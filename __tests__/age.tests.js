@@ -4,12 +4,14 @@ import { TestScheduler } from 'jest';
 
 describe('Age', () => {
   let james;
-})
+
 
 beforeEach(() => {
-  james = new Age(28)
-})
+  james = new Age(28);
+});
 
 test('The program should allow a user to input their age', () => {
-  expect(james.earthAge).toEqual(28);
+  expect(james.earthAge).toBe(28);
 }); 
+
+})

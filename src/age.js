@@ -1,8 +1,8 @@
 export class Age {
   constructor (earthAge) {
-  this.earthAge;
+  this.earthAge = earthAge;
   }
 
 
-  
+
 };
