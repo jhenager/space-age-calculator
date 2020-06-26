@@ -39,9 +39,13 @@ export class Age {
   }
 
   yearsLeftMercuryCalc (lifeExpectancy) {
-    this.yearsLeftMercury = parseInt((lifeExpectancy/.24)-this.mercuryAge);
+    if (this.mercuryAge>lifeExpectancy/.24) {
+      this.yearsLeftMercury = parseInt(this.mercuryAge-lifeExpectancy/.24)
+    } else {
+      this.yearsLeftMercury = parseInt((lifeExpectancy/.24)-this.mercuryAge);
+    }
   }
-
+  
   yearsLeftVenusCalc (lifeExpectancy) {
     this.yearsLeftVenus = parseInt((lifeExpectancy/.62)-this.venusAge)
   }

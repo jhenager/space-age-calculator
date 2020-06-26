@@ -77,7 +77,7 @@ describe('Age', () => {
   test('The program should determine if a user is already older than the expected life expectancy (Mercury) and calculate how many years past the life expectancy theyve lived.', () => {
     nana.mercuryCalc(nana.earthAge)
     nana.yearsLeftMercuryCalc(nana.lifeExpectancy);
-    expect(nana.yearsLeftMercury).toBe(42);
+    expect(nana.yearsLeftMercury).toBe(41);
   })
 });
 
