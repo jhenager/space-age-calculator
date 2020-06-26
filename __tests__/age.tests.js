@@ -9,7 +9,7 @@ describe('Age', () => {
 
   beforeEach(() => {
     james = new Age(28, 80);
-    nana = new Age (90, 80)
+    nana = new Age (100, 80)
   });
 
   test('The program should allow a user to input their age', () => {
@@ -71,25 +71,31 @@ describe('Age', () => {
 
   test('The program should determine if a user is already older than the expected life expectancy (Earth) and calculate how many years past the life expectancy theyve lived.', () => {
     nana.yearsLeftEarthCalc(nana.earthAge);
-    expect(nana.yearsLeftEarth).toBe(10);
+    expect(nana.yearsLeftEarth).toBe(20);
   })
 
   test('The program should determine if a user is already older than the expected life expectancy (Mercury) and calculate how many years past the life expectancy theyve lived.', () => {
     nana.mercuryCalc(nana.earthAge)
     nana.yearsLeftMercuryCalc(nana.lifeExpectancy);
-    expect(nana.yearsLeftMercury).toBe("You are 41 years older than the life expectancy!");
+    expect(nana.yearsLeftMercury).toBe("You are 82 years older than the life expectancy!");
   })
 
   test('The program should determine if a user is already older than the expected life expectancy (Venus) and calculate how many years past the life expectancy theyve lived.', () => {
     nana.venusCalc(nana.earthAge)
     nana.yearsLeftVenusCalc(nana.lifeExpectancy);
-    expect(nana.yearsLeftVenus).toBe("You are 15 years older than the life expectancy!");
+    expect(nana.yearsLeftVenus).toBe("You are 31 years older than the life expectancy!");
   })
   
   test('The program should determine if a user is already older than the expected life expectancy (Mars) and calculate how many years past the life expectancy theyve lived.', () => {
     nana.marsCalc(nana.earthAge)
     nana.yearsLeftMarsCalc(nana.lifeExpectancy);
-    expect(nana.yearsLeftMars).toBe("You are 4 years older than the life expectancy!");
+    expect(nana.yearsLeftMars).toBe("You are 10 years older than the life expectancy!");
+  })
+
+  test('The program should determine if a user is already older than the expected life expectancy (Jupiter) and calculate how many years past the life expectancy theyve lived.', () => {
+    nana.jupiterCalc(nana.earthAge)
+    nana.yearsLeftJupiterCalc(nana.lifeExpectancy);
+    expect(nana.yearsLeftJupiter).toBe(1);
   })
 });
 
