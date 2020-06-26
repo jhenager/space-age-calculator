@@ -69,9 +69,15 @@ describe('Age', () => {
     expect(james.yearsLeftJupiter).toBe(4);
   })
 
-  test('The program should determine if a user is already older than the expected life expectancy and calculate how many years past the life expectancy theyve lived.', () => {
+  test('The program should determine if a user is already older than the expected life expectancy (Earth) and calculate how many years past the life expectancy theyve lived.', () => {
     nana.yearsLeftEarthCalc(nana.earthAge);
     expect(nana.yearsLeftEarth).toBe(10);
+  })
+
+  test('The program should determine if a user is already older than the expected life expectancy (Mercury) and calculate how many years past the life expectancy theyve lived.', () => {
+    nana.mercuryCalc(nana.earthAge)
+    nana.yearsLeftMercuryCalc(nana.lifeExpectancy);
+    expect(nana.yearsLeftMercury).toBe(42);
   })
 });
 
