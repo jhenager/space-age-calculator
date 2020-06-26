@@ -55,7 +55,11 @@ export class Age {
   }
 
   yearsLeftMarsCalc (lifeExpectancy) {
-    this.yearsLeftMars = parseInt((lifeExpectancy/1.88)-this.marsAge)
+    if (this.marsAge>lifeExpectancy/1.88) {
+      this.yearsLeftMars = "You are " + parseInt(this.marsAge-lifeExpectancy/1.88) + " years older than the life expectancy!"
+    } else {
+      this.yearsLeftMars = parseInt((lifeExpectancy/1.88)-this.marsAge)
+    }
   }
 
   yearsLeftJupiterCalc (lifeExpectancy) {

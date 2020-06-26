@@ -85,6 +85,11 @@ describe('Age', () => {
     nana.yearsLeftVenusCalc(nana.lifeExpectancy);
     expect(nana.yearsLeftVenus).toBe("You are 15 years older than the life expectancy!");
   })
- 
+  
+  test('The program should determine if a user is already older than the expected life expectancy (Mars) and calculate how many years past the life expectancy theyve lived.', () => {
+    nana.marsCalc(nana.earthAge)
+    nana.yearsLeftMarsCalc(nana.lifeExpectancy);
+    expect(nana.yearsLeftMars).toBe("You are 4 years older than the life expectancy!");
+  })
 });
 
