@@ -39,6 +39,7 @@ describe('Age', () => {
   })
 
   test('The program should determine how many years left they have to live on Earth.', () => {
+    james.yearsLeftEarthCalc(james.earthAge);
     expect(james.yearsLeftEarth).toBe(52)
   })
 })
