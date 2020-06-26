@@ -49,4 +49,8 @@ export class Age {
   yearsLeftJupiterCalc (lifeExpectancy) {
     this.yearsLeftJupiter = parseInt((lifeExpectancy/11.86)-this.jupiterAge);
   }
+
+  oldCheck (age, lifeExpectancy) {
+    
+  }
 };

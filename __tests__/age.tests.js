@@ -4,10 +4,12 @@ import { TestScheduler } from 'jest';
 
 describe('Age', () => {
   let james;
+  let nana;
 
 
   beforeEach(() => {
     james = new Age(28, 80);
+    nana = new Age (90, 80)
   });
 
   test('The program should allow a user to input their age', () => {
@@ -66,4 +68,10 @@ describe('Age', () => {
     james.yearsLeftJupiterCalc(james.lifeExpectancy);
     expect(james.yearsLeftJupiter).toBe(4);
   })
+
+  test('The program should determine if a user is already older than the expected life expectancy and calculate how many years past the life expectancy theyve lived.', () => {
+    nana.yearsLeftEarthCalc(nana.age, nana.lifeExpectancy);
+    expect(nana.yearsLeftEarth).toBe(10);
+  })
 });
+
