@@ -42,4 +42,8 @@ describe('Age', () => {
     james.yearsLeftEarthCalc(james.earthAge);
     expect(james.yearsLeftEarth).toBe(52)
   })
+
+  test('The program should determine how many years left they have to live on Mercury.', () => {
+    expect(james.yearsLeftMercury).toBe(217)
+  })
 })
