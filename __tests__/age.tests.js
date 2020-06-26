@@ -52,7 +52,12 @@ describe('Age', () => {
   test('The program should determine how many years left they have to live on Venus.', () => {
     james.venusCalc(james.earthAge);
     james.yearsLeftVenusCalc(james.lifeExpectancy);
-    expect(james.yearsLeftVenus).toBe(217);
+    expect(james.yearsLeftVenus).toBe(84);
   })
 
-})
+  test('The program should determine how many years left they have to live on Mars.', () => {
+    james.marsCalc(james.earthAge);
+    james.yearsLeftMarsCalc(james.lifeExpectancy);
+    expect(james.yearsLeftMars).toBe(28);
+  })
+});
