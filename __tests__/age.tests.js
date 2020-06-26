@@ -15,6 +15,7 @@ describe('Age', () => {
   }); 
 
   test ('The program should be able to convert the users age into Mercury years.', () => {
+    james.mercuryCalc(james.earthAge);
     expect(james.mercuryAge).toBe(117);
   })
 })

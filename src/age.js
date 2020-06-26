@@ -5,7 +5,8 @@ export class Age {
   this.venusAge = venusAge;
   }
 
-mercuryCalc() {
+mercuryCalc(age) {
+  this.mercuryAge = age/.24;
 
 }
 
