@@ -26,7 +26,7 @@ describe('Age', () => {
 
   test ('The program should be able to convert the users age into Mars years', () => {
     james.marsCalc(james.earthAge);
-    expect(james.marsAge).toBe(15);
+    expect(james.marsAge).toBe(14);
   })
 
 

@@ -24,7 +24,7 @@ _Long description._
 
 * The program should be able to convert the user's age into Mars years.
   - Input: 28 (/1.88)
-  - Output: 15
+  - Output: 14
 
 * The program should be able to convert the user's age into Jupiter years.
   - Input: 28 (/11.86)
