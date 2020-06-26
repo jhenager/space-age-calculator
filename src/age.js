@@ -63,6 +63,10 @@ export class Age {
   }
 
   yearsLeftJupiterCalc (lifeExpectancy) {
-    this.yearsLeftJupiter = parseInt((lifeExpectancy/11.86)-this.jupiterAge);
+    if (this.jupiterAge>lifeExpectancy/11.86) {
+      this.yearsLeftJupiter = "You are " + parseInt(this.jupiterAge-lifeExpectancy/11.86) + " years older than the life expectancy!"
+    } else {
+      this.yearsLeftJupiter = parseInt((lifeExpectancy/11.86)-this.jupiterAge);
+    }
   }
 };
