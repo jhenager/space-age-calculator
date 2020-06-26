@@ -1,11 +1,12 @@
 export class Age {
-  constructor (earthAge, lifeExpectancy, yearsLeftEarth, yearsLeftMercury, yearsLeftVenus, yearsLeftMars, mercuryAge, venusAge, marsAge, jupiterAge) {
+  constructor (earthAge, lifeExpectancy, yearsLeftEarth, yearsLeftMercury, yearsLeftVenus, yearsLeftMars, yearsLeftJupiter, mercuryAge, venusAge, marsAge, jupiterAge) {
   this.earthAge = earthAge;
   this.lifeExpectancy = lifeExpectancy;
   this.yearsLeftEarth = yearsLeftEarth;
   this.yearsLeftMercury = yearsLeftMercury;
   this.yearsLeftVenus = yearsLeftVenus;
   this.yearsLeftMars = yearsLeftMars;
+  this.yearsLeftJupiter = yearsLeftJupiter;
   this.mercuryAge = mercuryAge;
   this.venusAge = venusAge;
   this.marsAge = marsAge;
@@ -43,5 +44,9 @@ export class Age {
 
   yearsLeftMarsCalc (lifeExpectancy) {
     this.yearsLeftMars = parseInt((lifeExpectancy/1.88)-this.marsAge)
+  }
+
+  yearsLeftJupiterCalc () {
+    
   }
 };
