@@ -29,5 +29,10 @@ describe('Age', () => {
     expect(james.marsAge).toBe(14);
   })
 
+  test ('The program should be able to convert the users age into Jupiter years', () => {
+    james.jupiterCalc(james.earthAge);
+    expect(james.jupiterAge).toBe(2);
+  })
+
 
 })

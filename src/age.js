@@ -18,4 +18,8 @@ export class Age {
   marsCalc(age) {
     this.marsAge = parseInt(age/1.88);
   }
+
+  jupiterCalc() {
+    
+  }
 };
