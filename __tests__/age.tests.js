@@ -7,7 +7,7 @@ describe('Age', () => {
 
 
   beforeEach(() => {
-    james = new Age(28);
+    james = new Age(28, 80);
   });
 
   test('The program should allow a user to input their age', () => {
@@ -32,6 +32,10 @@ describe('Age', () => {
   test ('The program should be able to convert the users age into Jupiter years', () => {
     james.jupiterCalc(james.earthAge);
     expect(james.jupiterAge).toBe(2);
+  })
+
+  test ('The program should allow the user to enter their life expectancy.', () => {
+    expect(james.lifeExpectancy).toBe(80);
   })
 
 

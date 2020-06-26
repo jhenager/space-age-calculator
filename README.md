@@ -30,10 +30,6 @@ _Long description._
   - Input: 28 (/11.86)
   - Output: 2
 
-* The program should parse the age results so they are integers and not decimals.
-  - Input: 28.2 years
-  - Output: 28 years
-
 * The program should allow the user to enter their life expectancy.
   - Input: What is your life expectancy?
   - Output: 80 years
