@@ -46,7 +46,7 @@ export class Age {
     this.yearsLeftMars = parseInt((lifeExpectancy/1.88)-this.marsAge)
   }
 
-  yearsLeftJupiterCalc () {
-    
+  yearsLeftJupiterCalc (lifeExpectancy) {
+    this.yearsLeftJupiter = parseInt((lifeExpectancy/11.86)-this.jupiterAge);
   }
 };
