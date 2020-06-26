@@ -1,4 +1,4 @@
-# _Super Galactic Age Calculator_
+# _Space Age Calculator_
 
 #### _SHORT DESCR_
 

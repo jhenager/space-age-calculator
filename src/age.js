@@ -5,9 +5,12 @@ export class Age {
   this.venusAge = venusAge;
   }
 
-mercuryCalc(age) {
-  this.mercuryAge = parseInt(age/.24);
+  mercuryCalc(age) {
+    this.mercuryAge = parseInt(age/.24);
 
-}
+  }
 
+  venusCalc() {
+    
+  }
 };
