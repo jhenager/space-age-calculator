@@ -16,7 +16,7 @@ _Long description._
 
 * The program should be able to convert the user's age into Mercury years.
   - Input: 28 (/.24)
-  - Output: 117
+  - Output: 116
 
 * The program should be able to convert the user's age into Venus years.
   - Input: 28 (/.62)

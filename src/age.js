@@ -6,7 +6,7 @@ export class Age {
   }
 
 mercuryCalc(age) {
-  this.mercuryAge = age/.24;
+  this.mercuryAge = parseInt(age/.24);
 
 }
 
