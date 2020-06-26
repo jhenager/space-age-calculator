@@ -70,7 +70,7 @@ describe('Age', () => {
   })
 
   test('The program should determine if a user is already older than the expected life expectancy and calculate how many years past the life expectancy theyve lived.', () => {
-    nana.yearsLeftEarthCalc(nana.age, nana.lifeExpectancy);
+    nana.yearsLeftEarthCalc(nana.earthAge);
     expect(nana.yearsLeftEarth).toBe(10);
   })
 });

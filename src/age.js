@@ -31,7 +31,11 @@ export class Age {
   }
 
   yearsLeftEarthCalc (age) {
-    this.yearsLeftEarth = parseInt(this.lifeExpectancy - age)
+    if (age>this.lifeExpectancy) {
+      this.yearsLeftEarth = parseInt(age-this.lifeExpectancy)
+    } else {
+      this.yearsLeftEarth = parseInt(this.lifeExpectancy - age)
+    }
   }
 
   yearsLeftMercuryCalc (lifeExpectancy) {
@@ -48,9 +52,5 @@ export class Age {
 
   yearsLeftJupiterCalc (lifeExpectancy) {
     this.yearsLeftJupiter = parseInt((lifeExpectancy/11.86)-this.jupiterAge);
-  }
-
-  oldCheck (age, lifeExpectancy) {
-    
   }
 };
