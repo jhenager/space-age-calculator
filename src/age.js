@@ -2,70 +2,70 @@ export class Age {
   constructor (earthAge, lifeExpectancy, yearsLeftEarth, yearsLeftMercury, yearsLeftVenus, yearsLeftMars, yearsLeftJupiter, mercuryAge, venusAge, marsAge, jupiterAge) {
   this.earthAge = earthAge;
   this.lifeExpectancy = lifeExpectancy;
-  this.yearsLeftEarth = yearsLeftEarth;
-  this.yearsLeftMercury = yearsLeftMercury;
-  this.yearsLeftVenus = yearsLeftVenus;
-  this.yearsLeftMars = yearsLeftMars;
-  this.yearsLeftJupiter = yearsLeftJupiter;
-  this.mercuryAge = mercuryAge;
-  this.venusAge = venusAge;
-  this.marsAge = marsAge;
-  this.jupiterAge = jupiterAge;
+  this.yearsLeftEarth;
+  this.yearsLeftMercury;
+  this.yearsLeftVenus;
+  this.yearsLeftMars;
+  this.yearsLeftJupiter;
+  this.mercuryAge;
+  this.venusAge;
+  this.marsAge;
+  this.jupiterAge;
   }
 
-  mercuryCalc(age) {
-    this.mercuryAge = parseInt(age/.24);
+  mercuryCalc() {
+    this.mercuryAge = parseInt(this.earthAge/.24);
   }
 
-  venusCalc(age) {
-    this.venusAge = parseInt(age/.62);
+  venusCalc() {
+    this.venusAge = parseInt(this.earthAge/.62);
   }
 
-  marsCalc(age) {
-    this.marsAge = parseInt(age/1.88);
+  marsCalc() {
+    this.marsAge = parseInt(this.earthAge/1.88);
   }
 
-  jupiterCalc(age) {
-    this.jupiterAge = parseInt(age/11.86);
+  jupiterCalc() {
+    this.jupiterAge = parseInt(this.earthAge/11.86);
   }
 
-  yearsLeftEarthCalc (age) {
-    if (age>this.lifeExpectancy) {
-      this.yearsLeftEarth = parseInt(age-this.lifeExpectancy)
+  yearsLeftEarthCalc () {
+    if (this.earthAge>this.lifeExpectancy) {
+      this.yearsLeftEarth = parseInt(this.earthAge-this.lifeExpectancy)
     } else {
-      this.yearsLeftEarth = parseInt(this.lifeExpectancy - age)
+      this.yearsLeftEarth = parseInt(this.lifeExpectancy - this.earthAge)
     }
   }
 
-  yearsLeftMercuryCalc (lifeExpectancy) {
-    if (this.mercuryAge>lifeExpectancy/.24) {
-      this.yearsLeftMercury = "You are " + parseInt(this.mercuryAge-lifeExpectancy/.24) + " years older than the life expectancy!"
+  yearsLeftMercuryCalc () {
+    if (this.mercuryAge>this.lifeExpectancy/.24) {
+      this.yearsLeftMercury = "You are " + parseInt(this.mercuryAge-this.lifeExpectancy/.24) + " years older than the life expectancy!"
     } else {
-      this.yearsLeftMercury = parseInt((lifeExpectancy/.24)-this.mercuryAge);
+      this.yearsLeftMercury = parseInt((this.lifeExpectancy/.24)-this.mercuryAge);
     }
   }
 
-  yearsLeftVenusCalc (lifeExpectancy) {
-    if (this.venusAge>lifeExpectancy/.62) {
-      this.yearsLeftVenus = "You are " + parseInt(this.venusAge-lifeExpectancy/.62) + " years older than the life expectancy!"
+  yearsLeftVenusCalc () {
+    if (this.venusAge>this.lifeExpectancy/.62) {
+      this.yearsLeftVenus = "You are " + parseInt(this.venusAge-this.lifeExpectancy/.62) + " years older than the life expectancy!"
     } else {
-      this.yearsLeftVenus = parseInt((lifeExpectancy/.62)-this.venusAge)
+      this.yearsLeftVenus = parseInt((this.lifeExpectancy/.62)-this.venusAge)
     }
   }
 
-  yearsLeftMarsCalc (lifeExpectancy) {
-    if (this.marsAge>lifeExpectancy/1.88) {
-      this.yearsLeftMars = "You are " + parseInt(this.marsAge-lifeExpectancy/1.88) + " years older than the life expectancy!"
+  yearsLeftMarsCalc () {
+    if (this.marsAge>this.lifeExpectancy/1.88) {
+      this.yearsLeftMars = "You are " + parseInt(this.marsAge-this.lifeExpectancy/1.88) + " years older than the life expectancy!"
     } else {
-      this.yearsLeftMars = parseInt((lifeExpectancy/1.88)-this.marsAge)
+      this.yearsLeftMars = parseInt((this.lifeExpectancy/1.88)-this.marsAge)
     }
   }
 
-  yearsLeftJupiterCalc (lifeExpectancy) {
-    if (this.jupiterAge>lifeExpectancy/11.86) {
-      this.yearsLeftJupiter = "You are " + parseInt(this.jupiterAge-lifeExpectancy/11.86) + " years older than the life expectancy!"
+  yearsLeftJupiterCalc () {
+    if (this.jupiterAge>this.lifeExpectancy/11.86) {
+      this.yearsLeftJupiter = "You are " + parseInt(this.jupiterAge-this.lifeExpectancy/11.86) + " years older than the life expectancy!"
     } else {
-      this.yearsLeftJupiter = parseInt((lifeExpectancy/11.86)-this.jupiterAge);
+      this.yearsLeftJupiter = parseInt((this.lifeExpectancy/11.86)-this.jupiterAge);
     }
   }
 };
