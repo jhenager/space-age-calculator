@@ -1,6 +1,6 @@
 # _Space Age Calculator_
 
-#### _Application made in C-sharp for Epicodus to show understanding of C-Sharp object creation and testing. It is designed to tell the user their age on other planets_
+#### _Application made in .NET framework with C# for Epicodus to show understanding of C# object creation and testing. It is designed to tell the user their age on other planets_
 
 #### By _**James Henager**_
 
